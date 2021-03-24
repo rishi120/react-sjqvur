@@ -1,0 +1,18 @@
+.listItems {
+  width: 300px;
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 10px;
+  list-style-type: none;
+  li {
+    color: #111;
+    line-height: 25px;
+    font-family: Lato;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    cursor: pointer;
+    :last-child {
+      border-bottom: 0;
+    }
+  }
+}
