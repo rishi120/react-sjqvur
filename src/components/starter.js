@@ -8,7 +8,9 @@ const Rendercontent = props => {
         {props.getMonths.map(getMonthResult => {
           return (
             <li
-              onClick={() => props.fetchResult(getMonthResult.name)}
+              onClick={() =>
+                props.fetchResult(getMonthResult.company.catchPhrase)
+              }
               key={getMonthResult.name}
             >
               {getMonthResult.name}

@@ -16,3 +16,36 @@
     }
   }
 }
+.tab-wrapper {
+  // padding-top: 10px;
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    li {
+      background-color: #111;
+      padding: 15px;
+      width: 150px;
+      margin: 10px;
+      border-radius: 5px;
+      color: #fff;
+      font-family: Lato;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+  .tab-content {
+    width: 600px;
+    border: 1px solid #dedede;
+    margin: auto;
+  }
+}
+.tab-content-wrapper {
+  .tab-content {
+    width: 600px;
+    margin: auto;
+    border: 1px solid #dedede;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
