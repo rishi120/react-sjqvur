@@ -26,7 +26,6 @@ const Rendermastercomponent = props => {
   const fetchResult = getValue => {
     setLoadResult(false);
     setShowListData(getValue);
-    // console.log(getValue);
   };
 
   function handleHomeTab() {
