@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useRef } from "react";
 
 const Rendertabs = props => {
   return (
     <section className="tab-wrapper">
       <ul>
-        <li onClick={props.handleHomeTab}>Home</li>
-        <li onClick={props.handleAboutTab}>About</li>
-        <li onClick={props.handleContactTab}>Contact</li>
+        <li onClick={props.handleHomeTab} ref={props.focusHomeBackground}>
+          Home
+        </li>
+        <li onClick={props.handleAboutTab} ref={props.focusAboutBackground}>
+          About
+        </li>
+        <li onClick={props.handleContactTab} ref={props.focusContactBackground}>
+          Contact
+        </li>
       </ul>
     </section>
   );
@@ -62,6 +68,9 @@ const Renderfinaltabcomponent = props => {
         handleHomeTab={props.handleHomeTab}
         handleAboutTab={props.handleAboutTab}
         handleContactTab={props.handleContactTab}
+        focusHomeBackground={props.focusHomeBackground}
+        focusAboutBackground={props.focusAboutBackground}
+        focusContactBackground={props.focusContactBackground}
       />
       <Rendertabcontent1
         showTabContent1={props.showTabContent1}
