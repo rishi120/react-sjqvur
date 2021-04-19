@@ -49,3 +49,23 @@
     border-radius: 5px;
   }
 }
+.grid-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 0;
+  .parent-wrapper {
+    width: 20%;
+    border: 1px solid #eee;
+    padding: 10px;
+    .content-wrapper {
+      h1 {
+        font-family: Lato;
+        text-align: center;
+      }
+      p {
+        font-family: Lato;
+        text-align: center;
+      }
+    }
+  }
+}

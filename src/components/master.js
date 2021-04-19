@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Renderfinalcontent from "./starter.js";
 import Renderfinaltabcomponent from "./tabs.js";
-// import Rendergrid from "./grid.js";
+import Rendergrid from "./grid.js";
 
 import Axios from "axios";
 
@@ -77,7 +77,7 @@ const Rendermastercomponent = props => {
         focusAboutBackground={focusAboutBackground}
         focusContactBackground={focusContactBackground}
       />
-      // <Rendergrid />
+       <Rendergrid />
     </>
   );
 };
